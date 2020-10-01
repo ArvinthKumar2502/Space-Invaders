@@ -58,6 +58,10 @@ def show_score(x,y):
     score_value=font.render("Score : "+str(score),True,(255,255,255))
     screen.blit(score_value,(x,y))
 
+#a func to show specific user score
+def show_vicky(x,y):
+    score_value=font.render("Score : "+str(score),True,(255,255,255))
+    screen.blit(score_value,(x,y))
 
 def show_game_over():
     over_text=game_over_font.render("Game Over !!",True,(255,255,255))
@@ -68,6 +72,9 @@ def show_game_over():
 def display_player(x,y):
     screen.blit(playerImg,(x,y))
 
+#display particulat user
+def display_vicky(x,y):
+    screen.blit(playerImg,(x,y))
 
 def display_enemy(x,y,i):
     screen.blit(enemyImg[i],(x,y))
